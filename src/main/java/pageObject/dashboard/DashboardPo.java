@@ -1,5 +1,6 @@
 package pageObject.dashboard;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageObject.base.BasePage;
@@ -9,8 +10,9 @@ public class DashboardPo extends BasePage {
     /**
      * DashboardPo
      *
-     * @param driver
+     * @param driver driver
      */
+
     public DashboardPo(WebDriver driver) {
         super(driver);
     }
@@ -44,7 +46,7 @@ public class DashboardPo extends BasePage {
      *
      * @return true or false
      */
-    public boolean verifyDashboardLogo(){
+    public boolean verifyDashboardLogo() throws InterruptedException {
         wait.waitForVisible(cxtLogo);
         boolean logoPresent =  selenium.isPresent(cxtLogo);
         boolean bannerPresent = selenium.isPresent(headerBanner);

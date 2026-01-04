@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CXT Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" name="Dashboard Tests(failed)">
+    <classes>
+      <class name="dashboard.DashboardTest">
+        <methods>
+          <include name="verifyDashboard"/>
+          <include name="setup"/>
+          <include name="verifyDashboardHoverAndNavigation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- dashboard.DashboardTest -->
+    </classes>
+  </test> <!-- Dashboard Tests(failed) -->
+</suite> <!-- Failed suite [CXT Automation Suite] -->
